@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ГРУЗМАП_СОТРУДНИКИDataSet1" targetNamespace="http://tempuri.org/ГРУЗМАП_СОТРУДНИКИDataSet1.xsd" xmlns:mstns="http://tempuri.org/ГРУЗМАП_СОТРУДНИКИDataSet1.xsd" xmlns="http://tempuri.org/ГРУЗМАП_СОТРУДНИКИDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ГРУЗМАП_СОТРУДНИКИConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ГРУЗМАП_СОТРУДНИКИConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WF1.Properties.Settings.GlobalReference.Default.ГРУЗМАП_СОТРУДНИКИConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ДолжностиTableAdapter" GeneratorDataComponentClassName="ДолжностиTableAdapter" Name="Должности" UserDataComponentName="ДолжностиTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ГРУЗМАП_СОТРУДНИКИConnectionString (Settings)" DbObjectName="[ГРУЗМАП СОТРУДНИКИ].dbo.Должности" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Должность FROM dbo.Должности</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Должность" DataSetColumn="Должность" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ГРУЗМАП_СОТРУДНИКИDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="ГРУЗМАП_СОТРУДНИКИDataSet1" msprop:Generator_DataSetName="ГРУЗМАП_СОТРУДНИКИDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Должности" msprop:Generator_RowEvHandlerName="ДолжностиRowChangeEventHandler" msprop:Generator_RowDeletedName="ДолжностиRowDeleted" msprop:Generator_RowDeletingName="ДолжностиRowDeleting" msprop:Generator_RowEvArgName="ДолжностиRowChangeEvent" msprop:Generator_TablePropName="Должности" msprop:Generator_RowChangedName="ДолжностиRowChanged" msprop:Generator_RowChangingName="ДолжностиRowChanging" msprop:Generator_TableClassName="ДолжностиDataTable" msprop:Generator_RowClassName="ДолжностиRow" msprop:Generator_TableVarName="tableДолжности" msprop:Generator_UserTableName="Должности">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Должность" msprop:Generator_ColumnPropNameInRow="Должность" msprop:Generator_ColumnPropNameInTable="ДолжностьColumn" msprop:Generator_ColumnVarNameInTable="columnДолжность" msprop:Generator_UserColumnName="Должность">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
